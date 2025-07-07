@@ -27,7 +27,7 @@ try:
             print(chunks.choices[0].delta.content, end='', flush=True)
             
 except AuthenticationError:
-    print('Authentication error --check your api key')
+    print(f"Authentication Error/maybe the key is expired")
 except APIError as apier:
     print(f"API error : {apier}")
 except Exception as exp:

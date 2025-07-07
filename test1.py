@@ -22,7 +22,7 @@ try:
                 max_tokens = 500)
     
 except AuthenticationError:
-    print(f"Authentication Error --check your API key")
+    print(f"Authentication Error/maybe the key is expired")
 except APIError as er:
     print(f"API error : {er} ")
 except Exception as ep:
