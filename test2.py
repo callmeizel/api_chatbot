@@ -1,14 +1,12 @@
 from openai import OpenAI, AuthenticationError,APIError
 
-# api-key - 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
-
 client = OpenAI(
-        api_key = "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",
+        api_key = "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",
         base_url = "https://openrouter.ai/api/v1"
 )
 
 
-prompt = 'explain why <Oxygen> is important?'
+prompt = 'explain why <Oxygen> is important? under 500 words'
 
 try:
     response = client.chat.completions.create(
