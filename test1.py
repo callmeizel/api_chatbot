@@ -1,10 +1,10 @@
 from openai import OpenAI, APIError, AuthenticationError
 
 # using OpenAI SDK
-# api key - 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
+# # api-key - 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
 
 client = OpenAI(
-        api_key = "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",
+        api_key = "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",
         base_url = "https://openrouter.ai/api/v1"
         )
 
@@ -12,7 +12,7 @@ prompt = "explain the word <hello>, under the given <max_tokens> variable"
 
 try:
     response = client.chat.completions.create(
-                model = "deepseek/deepseek-r1-0528",
+                model = "deepseek/deepseek-r1-0528:free",
                 messages = [
                     {
                         'role': 'user',
